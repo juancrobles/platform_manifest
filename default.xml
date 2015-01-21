@@ -7,11 +7,16 @@
   <remote  name="SpeedGroup"
            fetch="https://github.com/SpeedGroup" />
            
+  <remote  name="Giugiu19"
+           fetch="https://github.com/Giugiu19" />
+           
   <remote  name="github"
             fetch="https://github.com/" />
            
   <default revision="refs/tags/android-5.0.2_r1"
            remote="aosp"
+           sync-c="true"
+           sync-f="true"
            sync-j="4" />
 
    <project path="build" name="Smartandroidtech/platform_build" groups="pdk,tradefed" remote="github" revision="L-Test" >
