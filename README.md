@@ -20,7 +20,7 @@ Getting ready to build
 
 Choose supported device to build
 
-lunch aosp_trebon-userbug
+lunch aosp_trebon-eng
 
 Now build it
 
