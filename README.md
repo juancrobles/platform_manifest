@@ -2,32 +2,22 @@
 
 Initializing the source
 
-(Assuming you have a valid build environment setup)
 
-mkdir SpeedModTeam
+mkdir SpeedMod
 
-cd ~/SpeedModTeam
+cd ~/SpeedMod
 
 repo init -u https://github.com/SpeedGroup/platform_manifest.git -b trebon_aosp
 
 Sync the source
 
-repo sync -jx -f (x being however many cpu jobs)
+repo sync -j4 
 
-Getting ready to build
+Getting build
 
-. build/envsetup.sh
+. build/envsetup.sh && lunch aosp_trebon-user
 
-Choose supported device to build
-
-lunch aosp_trebon-eng
-
-Now build it
-
-mka otapackage
-
-For quick dirty rebuilds
-
+make otapackage
 
 Credits
 
