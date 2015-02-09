@@ -15,7 +15,6 @@
            
   <default revision="refs/tags/android-5.0.2_r1"
            remote="aosp"
-           sync-c="true"
            sync-f="true"
            sync-j="4" />
 
