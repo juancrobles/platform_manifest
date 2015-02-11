@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/" />
            
   <remote  name="SpeedGroup"
            fetch="https://github.com/SpeedGroup" />
@@ -10,15 +10,15 @@
   <remote  name="Giugiu19"
            fetch="https://github.com/Giugiu19" />
            
-  <remote  name="github"
-            fetch="https://github.com/" />
+  <remote  name="Smartandroidtech"
+           fetch="https://github.com/Smartandroidtech" />
            
   <default revision="refs/tags/android-5.0.2_r1"
            remote="aosp"
            sync-f="true"
            sync-j="4" />
 
-   <project path="build" name="SpeedGroup/platform_build" groups="pdk,tradefed" remote="github" revision="L-Test" >
+   <project path="build" name="platform_build" groups="pdk,tradefed" remote="SpeedGroup" revision="L-Test" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -274,7 +274,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="Smartandroidtech/platform_frameworks_base" groups="pdk-cw-fs" remote="github" revision="L-Test" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs" remote="Smartandroidtech" revision="L-Test" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -326,7 +326,6 @@
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
-  <project path="manifest" name="Smartandroidtech/platform_manifest" remote="github" revision="android-5.0.2_r1" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs" />
@@ -363,7 +362,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="Smartandroidtech/platform_packages_apps_settings" remote="github" revision="lollipop-release" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="Smartandroidtech" revision="lollipop-release" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -434,8 +433,8 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="Smartandroidtech/platform_system_core" groups="pdk" remote="github" revision="L-Test" />
-  <project path="system/extras" name="Smartandroidtech/platform_system_extras" groups="pdk" remote="github" revision="L-Test" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="Smartandroidtech" revision="L-Test" />
+  <project path="system/extras" name="platform_system_extras" groups="pdk" remote="Smartandroidtech" revision="L-Test" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
@@ -455,6 +454,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/speedmod" name="SpeedGroup/platform_vendor_speedmod_aosp" remote="github" revision="lollipop" />
+  <project path="vendor/speedmod" name="platform_vendor_speedmod_aosp" remote="SpeedGroup" revision="lollipop" />
 
 </manifest>
